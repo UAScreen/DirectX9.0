@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "D3DObject.h"
+
 using namespace System::Windows::Forms;
 D3DObject g_D3D;
 
@@ -47,7 +48,7 @@ bool D3DObject::InitD3D()
 
 	 D3DXIMAGE_INFO Info;
 
-	 std::wstring path =L"E:\\1_Programming\\1.png";
+	 std::wstring path =L"textures\\1.png";
 	 
 
 	 if (FAILED(D3DXGetImageInfoFromFile(path.c_str(), &Info)))
